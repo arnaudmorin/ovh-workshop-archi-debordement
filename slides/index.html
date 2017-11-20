@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Workshop - Architecture a debordement - OVH</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ovh.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-background="data/ovh-meet-up-brest-digit-event.jpg">
+                    # OVH
+                    #### Vers l'infini et l'au delà
+                    ![Architecture](data/logo-ovh-sans-150DPI.png)
+                </section>
+                <section  data-markdown data-background="data/nova_boot.gif" data-background-size="contain" data-background-color="black">
+                    # Instances à la demande
+                </section>
+                <section  data-markdown data-background="data/facturation.gif" data-background-color='white'>
+                    # Facturation à l'heure
+                </section>
+                <section  data-markdown data-background="data/flavors.gif" data-background-size="contain" data-background-color="black">
+                    # Des gabarits à partir de 4€/mois
+                </section>
+                <section data-background-video="data/montage_screen1_V2.mp4" data-background-video-loop data-background-video-muted data-background-color='white'>
+                    <h1>Interface de gestion simplifiée</h1>
+                </section>
+                <section  data-markdown data-background="data/map-region-pci-en-v3.jpg" data-background-color='black'>
+                    ## 5 regions (13 soon!)
+                </section>
+                <section  data-markdown data-background="data/1-curl.gif" data-background-size="contain" data-background-color="black">
+                    # API OpenStack
+                    # +
+                    # API OVH
+                </section>
+                <section  data-markdown data-background-color="white">
+                    ![ovh](data/logo-ovh-sans-300DPI.png)
+                    # +
+                    ![ovh](data/logo-hashicorp-3f10732f.svg)
+                </section>
+                <section  data-markdown data-background-color='white'>
+                    ![Architecture](data/architecture.png)
+                </section>
+                <section  data-markdown data-background="data/7-server-create.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/8-backend-test.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/9-backend-cloud-init.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/10-bootstrap-tf.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/11-variables-tf.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/12-terraform-apply.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/13-terraform-result-cli.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/15-horizon.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/15-terraform-result-web.gif" data-background-size="contain" data-background-color="black"></section>
+                <section  data-markdown data-background="data/question.gif" data-background-color="#ebebeb"></section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                slideNumber: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
