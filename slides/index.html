@@ -60,6 +60,9 @@
                     <section data-markdown>
                         ### C'est quoi ?
                     </section>
+                    <section data-markdown data-background="data/openstack_background.png" data-background-color="white">
+                        # OpenStack
+                    </section>
                     <section data-markdown data-background="data/nova_boot.gif" data-background-size="contain" data-background-color="black">
                         # Instances à la demande
                     </section>
@@ -88,16 +91,16 @@
                     <section data-markdown>
                         ### C'est quoi ?
                     </section>
-                    <section data-markdown>
+                    <section data-markdown data-background-color='white'>
                         ### Reseau prive de niveau 2
                         ![vRack](data/schema-isolation.png)
                     </section>
-                    <section data-markdown>
+                    <section data-markdown data-background-color='white'>
                         ### 4000 VLAN possibles!
                         ![vRack](data/schema-vlan.png)
                     </section>
-                    <section data-markdown>
-                        ### Faible latence
+                    <section data-markdown data-background-color='white'>
+                        ### Pas de latence additionnelle
                         ###### 40ms entre DC France / Canada
                         ![vRack](data/schema-datacentre.png)
                     </section>
@@ -113,9 +116,34 @@
                     <section data-markdown data-separator-notes="^Note:" data-background="data/networking1.gif">
                         ## Load Balancer
                     </section>
-                    <section data-markdown>
-                        ## TODO
+                    <section data-markdown data-separator-notes="^Note:" data-background="data/loadcat.gif" data-background-color='white'>
+                        # HAproxy
                     </section>
+                    <section data-markdown>
+                        # Algo
+                        #### First
+                        #### Least Connection
+                        #### Round Robin
+                        #### URI
+                    </section>
+                    <section data-markdown>
+                        ## Comment ca marche ?
+                        ![iplb_archi](data/iplb_archi2.png)
+                    </section>
+                    <section data-markdown>
+                        # Stickiness
+                        #### HTTP cookie
+                        #### Source IP
+                    </section>
+                    <section data-markdown data-background-color='white'>
+                        # Documentation
+                        ![iplb_doc](data/iplb_doc.png)
+                    </section>
+                    <section data-markdown data-background-color='white'>
+                        # API
+                        ![iplb_api](data/iplb_api.png)
+                    </section>
+
                 </section>
 
                 <!-- FIN -->
